@@ -1,3 +1,5 @@
+import numpy as np
+
 '''
 Write 6 print() statements to "draw" the following on the console
 
@@ -10,12 +12,12 @@ xxxxxxxx
 
 (hint: use escape sequence)
 '''
-line1=''
-line2=''
-line3=''
-line4=''
-line5=''
-line6=''
+line1 = 'ooo/\ooo'
+line2 = 'oo/  \oo'
+line3 = 'o/ \'\' \o'
+line4 = '/______\\'
+line5 = '|| || ||'
+line6 = 'xxxxxxxx'
 print(line1)
 print(line2)
 print(line3)
@@ -23,16 +25,21 @@ print(line4)
 print(line5)
 print(line6)
 
-'''
-Can you do it with just one print statement?
-(hint: use string concatenation
-'''
-print()
-
+# Why are comments invisible?????
+image_print = """
+ooo/\ooo
+oo/  \oo
+o/ '' \o
+/______\\
+|| || ||
+xxxxxxxx
+"""
+print(image_print)
 '''
 Choose three positive values for a, b, and c such that the final print() statement returns True
 '''
-a = 
-b = 
-c = 
-print(a**2 + b**2 == c**2)
+
+a = 1
+b = 1
+c = np.sqrt(2)
+print(a**2 + b**2 == int(c**2))
